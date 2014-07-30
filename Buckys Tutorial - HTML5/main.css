@@ -84,3 +84,15 @@ body{
 	padding:20px;
 	border-top: 2px solid green;
 }
+
+/*13 - Finishing the layout*/
+article{
+	background: #FFFBCC;
+	border: 1px solid red;
+	padding:20px;
+	margin-bottom: 15px;
+}
+
+article footer{
+	text-align: right;
+}
