@@ -1,0 +1,18 @@
+/*styling intro*/
+/*p[name*="bacon"]{color:blue;}*/
+
+
+/*6-psuedo class*/
+/*p:nth-child(odd){color:green;}
+p:nth-child(even){color:red;}*/
+
+/*7-negation psuedo class*/
+/**{color:blue;}
+:not(.bucky){color:red;};*/
+
+/*8-Sweet new css3 selectors*/
+/*div > p{color:green;}*/ 
+/*p.bucky + p{color:blue;}*/ /*apply only after the first paragraph class bucky*/
+/*p.bucky ~ p{color:blue;}*/ 
+
+
