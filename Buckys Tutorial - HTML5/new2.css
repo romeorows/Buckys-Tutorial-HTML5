@@ -1,0 +1,34 @@
+body{
+	text-align: center;
+}
+
+#box{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding:15px;
+	text-align: center;
+	border: 7px solid blue;
+	background: yellow;
+	outline:7px solid red;
+	/*22 - Crazy Transformations*/
+	/*transform:scale(-1,1);*/
+	/*transform:rotate(45deg);*/
+	/*transform:skew(30deg);*/
+	/*transform:translate(150px,300px);*/
+	/*transform:translate(100px,100px) rotate(30deg) scale(.8);*/
+
+	/*21 - Text Shadows, Gradients, and Alpha*/
+	/*background: -webkit-radial-gradient(center,circle,red 0%,orange 50%); 
+	-webkit-linear-gradient(45deg,black,white); 
+	-webkit-linear-gradient(top,black,white);
+	border-radius:25px;
+	box-shadow: rgba(110,110,110,.6) 10px 10px 10px;*/
+
+}
+
+#text{
+	font:bold 30px Century Gothic;
+	/*text-shadow: rgb(110,110,110) 3px 3px 5px;*/
+}
+
