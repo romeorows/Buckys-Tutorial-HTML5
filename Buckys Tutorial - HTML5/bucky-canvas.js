@@ -1,21 +1,37 @@
 
 function doFirst(){
-	//40 - Transformations
-	var x = document.getElementById('canvas');
-	canvas = x.getContext('2d'); //without var means its a global variable
 	
+	//41 - Saving and Restoring the Canvas
+	var x = document.getElementById('canvas');
+	canvas = x.getContext('2d');
 	canvas.font="bold 22px Tahoma";
 	canvas.textAlign="start";
-	canvas.fillText("start",10,30);
 	
-	canvas.translate(100,150);
-	canvas.fillText("after translate",0,0);
+	canvas.save();
+	canvas.fillText("lets begin", 10,30);
 	
 	canvas.rotate(1);
-	canvas.fillText("after rotate",0,0);
+	canvas.fillText("after rotation", 60,10);
 	
-	canvas.scale(1.5,4);
-	canvas.fillText("after scale",0,20);
+	canvas.restore();
+	canvas.fillText("after restoring", 10,30);
+	//40 - Transformations
+	// var x = document.getElementById('canvas');
+	// canvas = x.getContext('2d'); //without var means its a global variable
+	
+	// canvas.font="bold 22px Tahoma";
+	// canvas.textAlign="start";
+	// canvas.fillText("start",10,30);
+	
+	// canvas.translate(100,150);
+	// canvas.fillText("after translate",0,0);
+	
+	// canvas.rotate(1);
+	// canvas.fillText("after rotate",0,0);
+	
+	// canvas.scale(1.5,4);
+	// canvas.fillText("after scale",0,20);
+	
 	//39 - Working with Text and Shadows
 	// var x = document.getElementById('canvas');
 	// canvas = x.getContext('2d'); //without var means its a global variable
