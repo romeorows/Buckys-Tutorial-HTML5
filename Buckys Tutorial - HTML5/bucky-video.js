@@ -24,3 +24,17 @@ function playOrPause(){
 		updateBar=setInterval(update, 500);
 	}
 }
+
+//33 - How to Update the Progress Bar
+function update(){
+	if(!myMovie.ended){
+		var size=parseInt(myMovie.currentTime * barSize/myMovie.duration);
+		progressBar.style.width=size+'px';
+	}else{
+		progressBar.style.width='0px';
+		playButton.innerHTML='Play';
+		window.clearInterval(updateBar);
+	}
+
+}
+
