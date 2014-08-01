@@ -1,12 +1,23 @@
-// 36 - Drawing Shapes on the Canvas
+
 function doFirst(){
+	// 37 - Gradients on the Canvas
 	var x = document.getElementById('canvas');
 	canvas = x.getContext('2d'); //without var means its a global variable
-	canvas.fillRect(10,10,100,200);
-	canvas.clearRect(20,20,50,90);
-	//canvas.strokeRect(10,10,100,200);
+	var g = canvas.createLinearGradient(0,0,100,100);
+	g.addColorStop(.0,"blue");
+	g.addColorStop(.5,"green");
+	g.addColorStop(1,"red");
+	canvas.fillStyle=g;
+	canvas.fillRect(0,0,100,100);
+	// 36 - Drawing Shapes on the Canvas
+	// var x = document.getElementById('canvas');
+	// canvas = x.getContext('2d'); //without var means its a global variable
+	// canvas.fillStyle="blue";
+	// canvas.strokeStyle="red";
+	// canvas.strokeRect(10,10,100,100);
+	// canvas.fillRect(10,120,100,100);
+	// canvas.clearRect(20,130,45,65);
 	
-
 }
 
 window.onload=doFirst;
