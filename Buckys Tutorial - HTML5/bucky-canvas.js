@@ -1,20 +1,28 @@
 
 function doFirst(){
-	
-	//41 - Saving and Restoring the Canvas
+	//42 - Images on the Canvas
 	var x = document.getElementById('canvas');
 	canvas = x.getContext('2d');
-	canvas.font="bold 22px Tahoma";
-	canvas.textAlign="start";
 	
-	canvas.save();
-	canvas.fillText("lets begin", 10,30);
+	var pic = new Image();
+	pic.src="http://i.stack.imgur.com/Ckrc2.png";
+	pic.addEventListener("load",function(){canvas.drawImage(pic,0,0,x.width,x.height)},false);
+	//41 - Saving and Restoring the Canvas
+	// var x = document.getElementById('canvas');
+	// canvas = x.getContext('2d');
+	// canvas.font="bold 22px Tahoma";
+	// canvas.textAlign="start";
 	
-	canvas.rotate(1);
-	canvas.fillText("after rotation", 60,10);
+	// canvas.save();
+	// canvas.fillText("lets begin", 10,30);
 	
-	canvas.restore();
-	canvas.fillText("after restoring", 10,30);
+	// canvas.rotate(1);
+	// canvas.fillText("after rotation", 60,10);
+	
+	// canvas.restore();
+	// canvas.fillText("after restoring", 10,30);
+	
+	
 	//40 - Transformations
 	// var x = document.getElementById('canvas');
 	// canvas = x.getContext('2d'); //without var means its a global variable
