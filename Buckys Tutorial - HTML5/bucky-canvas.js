@@ -1,12 +1,25 @@
-
+function bucky(e){
+	canvas.clearRect(0,0,600,400);
+	var xPos=e.clientX;
+	var yPos=e.clientY;
+	canvas.fillRect(xPos-50,yPos-50,100,100);
+	
+}
 function doFirst(){
-	//42 - Images on the Canvas
+	//43 - Animation for Games!
 	var x = document.getElementById('canvas');
 	canvas = x.getContext('2d');
 	
-	var pic = new Image();
-	pic.src="http://i.stack.imgur.com/Ckrc2.png";
-	pic.addEventListener("load",function(){canvas.drawImage(pic,0,0,x.width,x.height)},false);
+	window.addEventListener("mousemove",bucky,false);
+	
+	//42 - Images on the Canvas
+	// var x = document.getElementById('canvas');
+	// canvas = x.getContext('2d');
+	
+	// var pic = new Image();
+	// pic.src="http://i.stack.imgur.com/Ckrc2.png";
+	// pic.addEventListener("load",function(){canvas.drawImage(pic,0,0,x.width,x.height)},false);
+	
 	//41 - Saving and Restoring the Canvas
 	// var x = document.getElementById('canvas');
 	// canvas = x.getContext('2d');
