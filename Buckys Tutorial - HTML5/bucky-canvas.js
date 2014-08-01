@@ -1,18 +1,34 @@
 
 function doFirst(){
-	//39 - Working with Text and Shadows
+	//40 - Transformations
 	var x = document.getElementById('canvas');
 	canvas = x.getContext('2d'); //without var means its a global variable
 	
-	canvas.shadowOffsetX=4;
-	canvas.shadowOffsetY=4;
-	canvas.shadowBlur=6;
-	canvas.shadowColor='rgba(0,0,255,.5)';
+	canvas.font="bold 22px Tahoma";
+	canvas.textAlign="start";
+	canvas.fillText("start",10,30);
 	
-	canvas.font="bold 36px Tahoma";
-	canvas.textAlign="end";
-	//canvas.strokeText("omgwtfbbq?", 300,100);
-	canvas.fillText("omgwtfbbq?", 300,100);
+	canvas.translate(100,150);
+	canvas.fillText("after translate",0,0);
+	
+	canvas.rotate(1);
+	canvas.fillText("after rotate",0,0);
+	
+	canvas.scale(1.5,4);
+	canvas.fillText("after scale",0,20);
+	//39 - Working with Text and Shadows
+	// var x = document.getElementById('canvas');
+	// canvas = x.getContext('2d'); //without var means its a global variable
+	
+	// canvas.shadowOffsetX=4;
+	// canvas.shadowOffsetY=4;
+	// canvas.shadowBlur=6;
+	// canvas.shadowColor='rgba(0,0,255,.5)';
+	
+	// canvas.font="bold 36px Tahoma";
+	// canvas.textAlign="end";
+	// //canvas.strokeText("omgwtfbbq?", 300,100);
+	// canvas.fillText("omgwtfbbq?", 300,100);
 	
 	//Sample 8 point Star code
 	// eightPointStart(200,100,70,20,8);
