@@ -38,3 +38,14 @@ function update(){
 
 }
 
+ //34 - Finishing Up the Video Player!
+function clickedBar(e){
+	if(!myMovie.paused && !myMovie.ended){
+		var mouseX=e.pageX-bar.offsetLeft;
+		var newtime = mouseX*myMovie.duration/barSize;
+		myMovie.currentTime=newtime;
+		progressBar.style.width=mouseX+'px';
+	}
+}
+
+window.addEventListener('load',doFirst,false);
