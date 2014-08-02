@@ -23,8 +23,13 @@ function display(){
 	rightbox.innerHTML="";
 
 	for (var x = 0; x < sessionStorage.length; x++) {
-		
+		var a = sessionStorage.key(x);
+		var b = sessionStorage.getItem(a);
+
+		rightbox.innerHTML += a + " - " +b +"<br />"; 
 	}
+
+
 	//51 - Retrieving and Displaying Stored Data
 	// var two = sessionStorage.getItem(one);
 	// rightbox.innerHTML="Name of variable: "+one+"<br />Value: "+two;
